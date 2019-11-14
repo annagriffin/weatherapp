@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+
+
+    <div class="main-page">
+        <div class="container">
+            <div class="main-stats">
+                <div class="is-size-1 city">
+                    {{ results.__zone_symbol__value.name }}
+                </div>
+                <div class="is-size-5 description">
+                    {{ results.__zone_symbol__value.weather[0].description }}
+                </div>
+                <div class="temperature">
+                    {{ results.__zone_symbol__value.main.temp }}<span>&#176;</span>F
+                </div>
+            </div>
+
+            <button class="button is-outlined" (click)="backBtn()">Back</button>
+
+            
+
+
+        </div>
+    </div>
+
+</body>
+
+</html>
