@@ -1,27 +1,32 @@
 # Weatherapp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.3.
+This is a simple Weather App that uses Angular and Open Weather Map API.
 
-## Development server
+[Open Weather Map](https://openweathermap.org) 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## API Setup
+If you don't have one already, you can get an API key from the [Open Weather App](https://openweathermap.org/api) website. 
 
-## Code scaffolding
+Once you have generated a key, make a copy of the `environment.ts` file. Rename the file `environment.dist.ts` and paste in your api key. It should look similar to this: 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```typescript
 
-## Build
+export const environment = {
+  production: false,
+  apikey: <yourkeyhere>
+};
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+```
 
-## Running unit tests
+## To run
+Run `ng serve` in the command line to get started.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Example
 
-## Running end-to-end tests
+#### Question Page
+![](img/frontpage.png)
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+#### Result Page
+![](img/results.png)
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
