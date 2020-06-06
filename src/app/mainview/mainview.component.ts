@@ -19,7 +19,7 @@ export class MainviewComponent implements OnInit {
 
 
   getWeather() {
-    let city = document.getElementById("city").value;
+    let city = (<HTMLInputElement>document.getElementById("city")).value;
     this.router.navigate(['/results', city]);
 
 
